@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'GhibliHero';
+  src: url('assets/fonts/Luna.ttf') format('truetype');
+}
+
+.wallpaper-setup {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('assets/bg-totoro.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.top-heading {
+  font-family: 'GhibliHero', sans-serif;
+  color: rgba(163, 247, 163, 1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.custom-fold {
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.fold-panel {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.fold-panel:last-child {
+  border-bottom: none;
+}
+
+.accordion-header {
+  background: transparent;
+}
+
+/* Targeting via data-attributes for background */
+[data-bg-target="pic1"] .accordion-button { background-image: url('assets/acc-bg1.png'); }
+[data-bg-target="pic2"] .accordion-button { background-image: url('assets/acc-bg2.png'); }
+[data-bg-target="pic3"] .accordion-button { background-image: url('assets/acc-bg3.png'); }
+[data-bg-target="pic4"] .accordion-button { background-image: url('assets/acc-bg4.png'); }
+[data-bg-target="pic5"] .accordion-button { background-image: url('assets/acc-bg5.png'); }
+
+.accordion-button {
+  background-color: transparent !important;
+  color: rgba(245, 222, 179, 1) !important;
+  font-family: 'GhibliHero', sans-serif;
+  font-size: 1.5rem;
+  border: none;
+  box-shadow: none !important;
+  padding: 20px;
+  background-position: center;
+  background-size: cover;
+}
+
+.accordion-button::after {
+  filter: invert(1);
+}
+
+.accordion-button:not(.collapsed) {
+  color: rgba(163, 247, 163, 1) !important;
+  background-color: transparent !important;
+}
+
+.fill-area {
+  background-color: rgba(253, 245, 230, 1);
+  color: rgba(51, 51, 51, 1);
+  padding: 20px;
+}
+
+/* Customizing Bootstrap floating labels */
+.form-floating > .form-control {
+  border-radius: 5px;
+  border: 1px solid rgba(204, 204, 204, 1);
+}
+
+.form-floating > .form-control:focus {
+  border-color: rgba(76, 175, 80, 1);
+  box-shadow: 0 0 0 0.2rem rgba(76, 175, 80, 0.25);
+}
+
+.form-floating > label {
+  font-weight: 700;
+  color: rgba(51, 51, 51, 0.7);
+}
+
+.visual-card {
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+
+.visual-chosen {
+  border: 4px solid rgba(76, 175, 80, 1) !important;
+}
+
+.magic-btn {
+  font-family: 'GhibliHero', sans-serif;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(46, 139, 87, 1);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 30px;
+  transition: 0.3s;
+}
+
+.magic-btn:hover {
+  background-color: rgba(31, 107, 64, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.err-msg {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.85em;
+  color: rgba(169, 68, 66, 1);
+}
+
+.pink-box {
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: rgba(169, 68, 66, 1);
+  background-color: rgba(255, 192, 203, 1);
+}
+
+.print-card {
+  background-color: rgba(232, 245, 233, 1);
+  border-radius: 10px;
+}
+
+.print-table td {
+  background-color: transparent;
+  padding: 0.1rem 0;
+  font-size: 0.9rem;
+}
